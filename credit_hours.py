@@ -1,4 +1,12 @@
-from selenium import webdriver
+import subprocess
+import sys
+
+try:
+    from selenium import webdriver
+except ModuleNotFoundError:
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "selenium"])
+    from selenium import webdriver
+    
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import NoSuchElementException
