@@ -1,3 +1,13 @@
+# READ THIS!
+# You will need to provide two csv files, one named "accounts.csv" and "vnums.csv"
+# "accounts.csv" needs your V-number first, and your PIN on a second line!
+# "vnums.csv" needs a list of V-numbers, each on their own line!
+# This program will log into banner your credentials provided by "accounts.csv" and
+# generate a list of V-numbers from "vnums.csv" to crawl each student's banner
+# and generate a new csv file called "credit_hours.csv"
+# "credit_hours.csv" contains a list of information about each student:
+#       V-number, Student Name, Earned Credits, Year, Enrolled Credits
+
 import subprocess
 import sys
 
