@@ -9,7 +9,6 @@
 #       V-number, Student Name, Earned Credits, Year, Enrolled Credits
 
 import subprocess
-import sys
 
 try:
     from selenium import webdriver
